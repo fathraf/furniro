@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: Poppins, sans-serif;
+}
 .site-header{
   display: flex;
   justify-content: space-between;
@@ -12,4 +15,8 @@
 }
 .logo-container{
   display: flex;
+  
+}
+.logo-container h1{
+  padding-left: 0.30rem;
 }
