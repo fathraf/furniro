@@ -24,6 +24,15 @@ body{
 .nav-list{
   display: flex;
   list-style: none;
-  gap: 4rem;
-
+  gap: 4.5rem;
+}
+.nav-item-text{
+  color: black;
+  text-decoration: none;
+}
+.fa-solid{
+  padding-right: 2.5rem;
+}
+.fa-regular{
+  padding-right: 2.5rem;  
 }
