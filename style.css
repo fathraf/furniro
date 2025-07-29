@@ -5,6 +5,7 @@
 }
 body{
   font-family: Poppins, sans-serif;
+  ;
 }
 .site-header{
   display: flex;
@@ -28,11 +29,15 @@ body{
 }
 .nav-item-text{
   color: black;
-  text-decoration: none;
+  text-decoration: none
+  ;
 }
 .fa-solid{
   padding-right: 2.5rem;
 }
 .fa-regular{
   padding-right: 2.5rem;  
+}
+.first-page{
+  background-image: url('first-body-image.jpg');
 }
