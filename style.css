@@ -38,7 +38,8 @@ i {
 .site-header__nav-list {
   display: flex;
   list-style: none;
-  gap: 4.5rem;
+  gap: 4.5rem;  
+  font-weight: 500
 }
 
 .site-header__nav-link {
