@@ -111,11 +111,11 @@ i {
   margin-block-start: 2rem;
 }
 
-.browse-range__text-box{
+.browse-range__text-box, .products__title{
   text-align: center;
   margin-block-start: 3rem;
 }
-.browse-range__text-box .browse-range__title{
+.browse-range__text-box .browse-range__title, .products__title{
   font-size: 28px;
   color: rgb(60, 58, 58);
 }
@@ -125,12 +125,12 @@ i {
 }
 .browse-range-items{
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   margin-block-start: 3rem;
 }
 .browse-range__card{
-  width: 350px;
+  width: 500px;
   text-align: center;
 }
  .browse-range__card-image{
@@ -140,11 +140,12 @@ i {
   
 }
 .browse-range__card-title{
-  font-size: 22px;
+  font-size: 24px;
   color: #2b2a2a;
   font-weight: 600;
   padding-block-start: 1rem
 }
+
 
 
 
