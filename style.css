@@ -76,8 +76,7 @@ i {
 }
 
 .hero-section__text-box {
-  /* display: flex;
-  flex-direction: column; */
+ 
   position: absolute;
   top: 30%;
   right: 10%;
@@ -111,26 +110,6 @@ i {
   padding: 20px 60px;
   margin-block-start: 2rem;
 }
-
-/* .browse-range{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-  gap: 2rem;
-}
-.browse-range__text-box h2, p{
-  margin: 0;
-  text-align: center;
-}
-.browse-range__card-image{
-  display: flex;
-  gap: 1rem;
-}
-.browse-range__card-image img{
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
-} */
 
 .browse-range__text-box{
   text-align: center;
