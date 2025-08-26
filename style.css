@@ -146,6 +146,14 @@ i {
   padding-block-start: 1rem
 }
 
-
-
+/* .products__items{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+} */
+.products__card{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
 
