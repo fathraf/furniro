@@ -149,6 +149,8 @@ i {
 .products__items{
   display: grid;
   gap: 2rem;
+  grid-template-columns: repeat(4,250px);
+  margin-inline-start: 13rem;
 }
 .products__card{
   margin-block-start: 2rem;
@@ -157,10 +159,39 @@ i {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  display: block;
 }
-.products__items{
-  display: grid;
-  grid-template-columns: repeat(4,250px);
-  margin-inline-start: 13rem;
+.products__card-box{
+  background-color: #efefef;
+  margin-block-start: 0;
+  padding-inline-start: 1rem;
+  padding-block-end: 1rem;
 }
-
+.products__card-title{
+  font-weight: 600;
+  font-size: 20px;
+  color: #2b2a2a;
+  padding-block-start: 1rem;
+}
+.prodcuts__card-description{
+ padding-block-start: 2px;
+ color: gray; 
+ font-weight: 500;
+}
+.products__card-price{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(60, 58, 58);
+}
+.products__card-ogPrice{
+  font-size: 0.8rem ;
+  text-decoration: line-through ;
+  color: gray; 
+   padding-inline-start: 1rem;
+   padding-block-start: 0.2rem;
+}
+.products__price{
+  display: flex;
+ 
+ 
+}
