@@ -192,6 +192,15 @@ i {
 }
 .products__price{
   display: flex;
- 
- 
+}
+.products__button{
+  border: 1px solid #b88e2f;
+  color: #b88e2f;
+  background:#fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding-block: 16px;
+  padding-inline: 5rem;
+  margin-block-start: 1.8rem;
+  margin-left  : 41rem;
 }
