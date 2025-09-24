@@ -1,4 +1,9 @@
-
+@media(max-width:650px){
+  .products__items{
+     grid-template-columns: 1fr;
+     width: 100%;
+  }
+}
 :root {
   --txt-clr-box: #b88e2f;
   --fnt-family-box: Poppins, sans-serif;
@@ -113,12 +118,12 @@ i {
   margin-block-start: 3rem;
 }
 .browse-range__text-box .browse-range__title, .products__title{
-  font-size: 28px;
+  font-size: 1.7em;
   color: rgb(60, 58, 58);
 }
 .browse-range__text-box .browse-range__description{
   color:#4e4c4c;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 .browse-range-items{
   display: flex;
@@ -127,7 +132,7 @@ i {
   margin-block-start: 3rem;
 }
 .browse-range__card{
-  width: 380px;
+  width: 20%; 
   text-align: center;
 }
  .browse-range__card-image{
@@ -137,7 +142,7 @@ i {
   
 }
 .browse-range__card-title{
-  font-size: 24px;
+  font-size: 1.5em;
   color: #2b2a2a;
   font-weight: 600;
   padding-block-start: 1rem
@@ -146,11 +151,13 @@ i {
 .products__items{
   display: grid;
   /* gap: 2rem; */
+  width: auto;
+  /* max-width: 1520px; */
   gap: clamp(1rem,2vw,2rem);
-  grid-template-columns: repeat(4,250px);
+  grid-template-columns: repeat(4,15rem);
   justify-content: center;
-  /* margin-inline-start: 13rem; */
-   /* margin-inline-start: clamp(1rem, 2vw + 0.5rem, 13rem); */
+  margin-inline-start: auto;
+   margin-inline-end: auto;
 }
 .products__card{
   /* margin-block-start: 2rem; */
@@ -170,22 +177,22 @@ i {
 }
 .products__card-title{
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #2b2a2a;
   padding-block-start: 1rem;
 }
 .prodcuts__card-description{
- padding-block-start: 2px;
+ padding-block-start: 0.275rem;
  color: gray; 
  font-weight: 500;
 }
 .products__card-price{
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: 600;
   color: rgb(60, 58, 58);
 }
 .products__card-ogPrice{
-  font-size: 0.8rem ;
+  font-size: 0.8em ;
   text-decoration: line-through ;
   color: gray; 
   padding-inline-start: 1rem;
@@ -198,9 +205,9 @@ i {
   border: 1px solid #b88e2f;
   color: #b88e2f;
   background:#fff;
-  font-size: 13px;
+  font-size: 0.81em;
   font-weight: 600;
-  padding-block: 16px;
+  padding-block: 1rem;
   padding-inline: 5rem;
   margin-block-start: 1.8rem;
   margin-inline-start  : 41rem;
@@ -225,7 +232,7 @@ i {
 .add-to-cart{
   background: #fff;
   color: #000;
-  padding: 10px 20px;
+  padding: 0.625em 1.25em;
   border: none;
   border-radius: 4px;
   font-weight: 600;
@@ -238,7 +245,7 @@ i {
 .products__actions{
   display: flex;
   gap: 20px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .products__card-imageBox:hover .products__overlay{
   opacity:1;
