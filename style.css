@@ -77,12 +77,11 @@ i {
 }
 
 .hero-section__text-box {
- 
   position: absolute;
   top: 30%;
   right: 10%;
   background-color: #f9ead8;
-  padding: 2rem;
+  padding: 2em;
 }
 
 .hero-section__tagline {
@@ -97,7 +96,7 @@ i {
 }
 
 .hero-section__description {
-  margin-block-start: 0.7rem;
+  margin-block-start: 0.7em;
   font-weight: 500;
   color: #333;
   font-size: 1.125rem;
@@ -108,31 +107,36 @@ i {
   color: #fff;
   font-weight: bold;
   border: none;
-  padding: 20px 60px;
-  margin-block-start: 2rem;
+  padding: 1.3em 3.8em;
+  margin-block-start: 2em;
 }
-
-.browse-range__text-box, .products__title{
+.browse-range{
+  margin-block-start: 3em;
+}
+.browse-range__text-box{
   text-align: center;
-  margin-block-start: 3rem;
-}
-.browse-range__text-box .browse-range__title, .products__title{
-  font-size: 1.7em;
   color: rgb(60, 58, 58);
 }
-.browse-range__text-box .browse-range__description{
+/* .browse-range__text-box, .products__title{
+  text-align: center;
+  margin-block-start: 3rem;
+} */
+/* .browse-range__text-box .browse-range__title, .products__title{
+  font-size: 1.7em;
+  color: rgb(60, 58, 58);
+} */
+/* .browse-range__text-box .browse-range__description{
   color:#4e4c4c;
   font-size: 1.125em;
-}
+} */
 .browse-range-items{
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
-  margin-block-start: 3rem;
+  margin-block-start: 3em;
 }
 .browse-range__card{
   width: 20%; 
-  text-align: center;
 }
  .browse-range__card-image{
   width: 100%;
@@ -141,32 +145,35 @@ i {
   
 }
 .browse-range__card-title{
-  font-size: 1.5em;
+  text-align: center;
+  font-size: 1.17rem;
   color: #2b2a2a;
   font-weight: 600;
-  padding-block-start: 1rem
+  padding-block-start: 1em
 }
-
+.products{
+  margin-block-start: 3em;
+}
+.products__title{
+  text-align: center;
+  color: #333;
+}
 .products__items{
   display: grid;
-  /* gap: 2rem; */
-  width: auto;
-  /* max-width: 1520px; */
-  gap: clamp(1rem,2vw,2rem);
   grid-template-columns: repeat(4,15rem);
+  gap: 1.5rem;
   justify-content: center;
-  margin-inline-start: auto;
-   margin-inline-end: auto;
-}
-.products__card{
-  /* margin-block-start: 2rem; */
-  margin-block-start: clamp(1rem,2vw,2rem);
+   margin-block-start: clamp(1rem,2vw,2rem);
+  /* margin-inline-start: auto;
+  margin-inline-end: auto; */
 }
  .products__card-image{
+  display: block;
   width: 100%;
   height: clamp(11.25rem,25vw,18rem );
   object-fit: cover;
-  display: block;
+  background-position: center;
+  background-size: cover;
 } 
 .products__card-box{
   background-color: #efefef;
