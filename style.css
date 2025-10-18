@@ -80,7 +80,48 @@ i {
   background-color: #f9ead8;
   padding: 2em;
 }
+.shop-banner{
+  position: relative;
+  width: 100%;
+  height: 260px;
+}
+.shop-banner__image{
+  background-image: url('shop-icon/banner.jpg');
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.shop-banner__text-box{
+  position: absolute;
+  top: 40%;
+  right: 45%;
+}
+.shop-banner__heading{
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.shop-banner__nav-link{
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+.shop-banner__nav-link:after{
+  content: '\003E';
+  padding-inline-start: .3em;
+  padding-block-start: .3em;
+  font-size: 1.5rem;
+  padding-block-start: 1em;
 
+}
+.shop-banner__nav-linkShop{
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  display: inline;
+}
 .hero-section__tagline {
   font-weight: 600;
   letter-spacing: 0.2em;
