@@ -15,6 +15,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet"> <!--font family-->
+  <!-- For Shop-toolbar filter button icon  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <!-- for grid-view in shop-toolbar -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <!-- for interface in shop-toolbar -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <!-- for shop-info__quality  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <!-- for shop-info__shipping -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <!-- for shop-info__supportg -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 </head>
 <body>
   <header class="site-header">
@@ -47,5 +59,486 @@
       <p class="shop-banner__nav-linkShop">Shop</p>
     </div>
   </section>
+
+  <div class="shop-toolbar">
+    <!-- button -->
+    <div class="shop-toolbar__button">
+    <button class="shop-toolbar__filter-btn">
+      <i class="fi fi-rr-settings-sliders"></i>
+      Filter
+    </button>
+    <button class="shop-toolbar__grid-view">
+      <i class="fi fi-br-apps"></i>
+    </button>
+    <button class="shop-toolbar__interface">
+      <i class="fi fi-rr-pause"></i>
+    </button>
+    </div>
+    <!-- button ends -->
+    <!-- vertical line -->
+      <div class="vertical-line"></div>
+      <p class="shop-toolbar__results-info">Showing 1-16 of 32 results</p>
+     <!-- Show dropdown -->
+      <div class="shop-shortShow__select">
+        <label for="shop-toolbar__short">Show</label>
+        <input type="text"placeholder="16" id="shop-toolbar__short-input">
+        <!-- Show dropdown ends -->
+        <!-- Sort by dropdown  -->
+        <label for="shop-toolbar__short">Short by</label>
+        <input type="text"placeholder="Default" id="shop-toolbar__short-input">
+     </div>
+    <!-- Sort by dropdown  -->
+
+  </div>
+  <section class="products">
+    <div class="products__items">
+      <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/stylishChair.jpeg"
+          alt="Stylish cafe chair"
+          class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Syltherine</h3>
+          <p class="products__card-description">Stylish cafe chair</p>
+          <div class="products__price">
+            <p class="products__card-price">Rp 2,500.000<p>
+            <p class="products__card-ogPrice">Rp 3,500.000</p>
+          </div>
+        </div>
+      </div>
+      <!-- ends here -->
+      <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"></a><img src="icon/chair.png"
+            alt="Stylish cafe chair"
+            class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Leviosa</h3>
+          <p class="products__card-description">Stylish cafe chair</p>
+          <p class="products__card-price">Rp 2,500.000</p>
+        </div>
+      </div>
+      <!-- ends here -->
+        <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/big-sofawhite.png"
+            alt="Luxury big sofa"
+            class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Lolito</h3>
+          <p class="products__card-description">Luxury big sofa</p>
+          <div class="products__price">
+            <p class="products__card-price">Rp 7,000.000</p>
+            <p class="products__card-ogPrice">Rp 14,000.000</p>
+          </div>
+        </div>
+      </div>
+      <!-- ends here -->
+        <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/outdoor.jpg"
+            alt="Outdoor"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Respira</h3>
+          <p class="products__card-description">Outdoor bar table and stool</p>
+          <p class="products__card-price">Rp 500.000</p>          
+        </div>   
+      </div>   
+      <!--ends here  -->
+      <!-- image card starts here -->
+       <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/night-lamp.jpg"
+          alt="lamp"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Grifo</h3>
+          <p class="products__card-description">Night lamp</p>
+          <p class="products__card-price">Rp 1.500.000</p>
+        </div>
+       </div>
+       <!-- ends here -->
+        <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/sofa.jpg"
+          alt="sofa"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Muggo</h3>
+          <p class="products__card-description">Small mug</p>
+          <p class="products__card-price">Rp 150.000</p>
+        </div>
+      </div>
+      <!-- ends here -->
+       <!-- image cards starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/sofa-bedset.webp"
+          alt="bedset"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Pingky</h3>
+          <p class="products__card-description">Cute bedset</p>
+          <div class="products__price">
+            <p class="products__card-price">Rp 7.000.000</p>
+            <p class="products__card-ogPrice">14,000.000</p>
+          </div>
+        </div>        
+      </div>
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/brownsofa.png"
+          alt="brown sofa"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Potty</h3>
+          <p class="products__card-description">Minimalist flower pot</p>
+          <p class="products__card-price">Rp 500.000</p>
+        </div>
+      </div>
+      <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/stylishChair.jpeg"
+          alt="Stylish cafe chair"
+          class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Syltherine</h3>
+          <p class="products__card-description">Stylish cafe chair</p>
+          <div class="products__price">
+            <p class="products__card-price">Rp 2,500.000<p>
+            <p class="products__card-ogPrice">Rp 3,500.000</p>
+          </div>
+        </div>
+      </div>
+      <!-- ends here -->
+      <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/chair.png"
+            alt="Stylish cafe chair"
+            class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Leviosa</h3>
+          <p class="products__card-description">Stylish cafe chair</p>
+          <p class="products__card-price">Rp 2,500.000</p>
+        </div>
+      </div>
+      <!-- ends here -->
+        <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/big-sofawhite.png"
+            alt="Luxury big sofa"
+            class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Lolito</h3>
+          <p class="products__card-description">Luxury big sofa</p>
+          <div class="products__price">
+            <p class="products__card-price">Rp 7,000.000</p>
+            <p class="products__card-ogPrice">Rp 14,000.000</p>
+          </div>
+        </div>
+      </div>
+      <!-- ends here -->
+        <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/outdoor.jpg"
+            alt="Outdoor"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Respira</h3>
+          <p class="products__card-description">Outdoor bar table and stool</p>
+          <p class="products__card-price">Rp 500.000</p>          
+        </div>   
+      </div>   
+      <!--ends here  -->
+      <!-- image card starts here -->
+       <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/night-lamp.jpg"
+          alt="lamp"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Grifo</h3>
+          <p class="products__card-description">Night lamp</p>
+          <p class="products__card-price">Rp 1.500.000</p>
+        </div>
+       </div>
+       <!-- ends here -->
+        <!-- image card starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/sofa.jpg"
+          alt="sofa"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Muggo</h3>
+          <p class="products__card-description">Small mug</p>
+          <p class="products__card-price">Rp 150.000</p>
+        </div>
+      </div>
+      <!-- ends here -->
+       <!-- image cards starts here -->
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/sofa-bedset.webp"
+          alt="bedset"class="products__card-image"></a>
+          <div class="products__overlay">
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Pingky</h3>
+          <p class="products__card-description">Cute bedset</p>
+          <div class="products__price">
+            <p class="products__card-price">Rp 7.000.000</p>
+            <p class="products__card-ogPrice">14,000.000</p>
+          </div>
+        </div>        
+      </div>
+      <div class="products__card">
+        <div class="products__card-imageBox">
+          <a href="#"><img src="icon/brownsofa.png"
+          alt="brown sofa"class="products__card-image">
+          <div class="products__overlay"></a>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="products__actions">
+              <span>Share</span>
+              <span>Compare</span>
+              <span>Like</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__card-box">
+          <h3 class="products__card-title">Potty</h3>
+          <p class="products__card-description">Minimalist flower pot</p>
+          <p class="products__card-price">Rp 500.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="shop-products__btn">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>Next</button>
+  </div>
+  <div class="shop-info">
+    <!-- High Quality -->
+    <div class="shop-info__quality">
+      <div class="shop-info__icon">
+        <i class="fi fi-rr-trophy"></i>
+      </div>
+      <div class="shop-info__naming">
+        <h2 class="shop-info__head">High Quality</h2>
+        <p class="shop-info__desc">crafted from top materials</p>
+      </div>
+    </div>
+    <!-- Warranty Protection -->
+    <div class="shop-info__warranty">
+      <div class="shop-info__icon">
+        <i class="fi fi-rr-octagon-check"></i>
+      </div>
+      <div class="shop-info__naming"> 
+        <h2 class="shop-info__head">Warranty Protection</h2>
+        <p class="shop-info__desc">Over 2 years</p>
+      </div>
+    </div>
+    <!-- Free Shipping -->
+     <div class="shop-info__shipping">
+      <div class="shop-info__icon">
+        <i class="fi fi-rs-dolly-flatbed"></i>
+      </div>
+      <div class="shop-info__naming">
+        <h2 class="shop-info__head">Free Shipping</h2>
+        <p class="shop-info__desc">Order over 150 $</p>
+      </div>
+     </div>
+
+    <div class="shop-info__support">
+      <div class="shop-info__icon">
+        <i class="fi fi-rs-user-headset"></i>
+      </div>
+      <div class="shop-info__naming">
+        <h2 class="shop-info__head">24 / 7 Support</h2>
+        <p class="shop-info__desc">Dedicated Support</p>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+   <div class="horizontal-line"></div> <!-- Horizontal line using CSS -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer__brand">
+        <h2 class="footer__brand-title">Furniro.</h2>
+        <p class="footer__brand-address">
+         400 University Drive Suite 200 Coral<br> Gables,<br>FL 33134 USA
+        </p>
+      </div>
+    
+      <div class="footer__heading">
+        <div class="footer__heading-links">
+          <h4 class="footer__title">Links</h4>
+          <ul class="footer__items">
+            <li class="footer__lists"><a href=""class="footer__links">Home</a></li>
+            <li class="footer__lists"><a href=""class="footer__links">Shop</a></li>
+            <li class="footer__lists"><a href=""class="footer__links">About</a></li>
+            <li class="footer__lists"><a href=""class="footer__links">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer__heading-help">
+          <h4 class="footer__title">Help</h4>
+          <ul class="footer__items">
+            <li class="footer__lists"><a href=""class="footer__links">Payment Options</a></li>
+            <li class="footer__lists"><a href=""class="footer__links">Returns</a></li>
+            <li class="footer__lists"><a href=""class="footer__links">Privacy Policies</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer__heading-newsletter">
+          <h4 class="footer__title">Newsletter</h4>
+          <form footer__form>
+            <input type="email"class="footer__input" placeholder="Enter Your Email Address">
+            <button class="footer__sub-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  <div class="horizontal-margin"></div> <!-- Horizontal line using CSS -->
+
+    <p class="footer__copyright">2023 Furniro. All Rights Reserved</p>
+  </footer>
 </body>
 </html>
