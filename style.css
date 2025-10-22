@@ -459,3 +459,13 @@ padding-block-end: .4em;
   font-weight: 500;
 }
 
+.single-product__banner{
+  background-color: #faf2e8;
+  display: flex;
+  gap: 1.5rem;
+}
+.single-product__banner-link::after{
+  content: '\003E';
+  /* margin-inline-start: .8em;
+  margin-inline-end: .5em; */
+}
