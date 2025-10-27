@@ -15,6 +15,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet"> <!--font family-->
+    <!-- font-family of product-info-head -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
@@ -40,13 +44,115 @@
     </div>
   </header>
   <div class="single-product">
-    <div class="single-product__banner">
-      <a href="index.html" class="single-product__banner-link">Home</a>
-      <a href="shop.html" class="single-product__banner-link">Shop</a>
+    <div class="product__banner">
+      <div class="product__banner-texts">
+        <a href="index.html" class="product__banner-link">Home</a> &gt;
+        <a href="shop.html" class="product__banner-link">Shop</a> &gt;
+      </div>
       <!-- vertical line -->
       <div class="vertical-line"></div>
-      <p class="single-product__banner-head">Syltherine</p>
+      <p class="product__banner-head">Syltherine</p>
     </div>
+    
+    <main class="product-page">
+      <!-- Left Gallery -->
+      <section class="product-page__gallery">
+        <!-- thumbnail column -->
+        <div class="gallery-column__thumbs thumbs">
+          <button class="thumb">
+            <img src="products/stylish-chair1.jpg" alt="thumb 1">
+          </button>
+
+          <button class="thumb">
+            <img src="products/stylish-chair2.jpg" alt="thumb 2">
+          </button>
+
+          <button class="thumb">
+            <img src="products/stylish-chair3.jpg" alt="thumb 3">
+          </button>
+
+          <button class="thumb">
+            <img src="products/stylish-chair4.jpg" alt="thumb 4">
+          </button>
+        </div>
+
+          <div class="main-image" id="main-imageContainer">
+            <img src="icon/stylishChair.jpg" alt="Large product image">
+          </div>
+      </section>
+
+      <aside class="product-info">
+        <h3 class="product-info__head">Syltherine</h3>
+        <div>
+          <p class="product-info__price">Rs. 2500.000</p>
+          <div class="rating-row">
+            ★ ★ ★ ★ ☆ 
+            <!-- <div class="vertical-line"></div> -->
+            <small>5 Customer Review</small>
+          </div>
+        </div>
+        <p class="product-info__desc">
+          Setting the bas as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+        </p>
+        <div class="variant-row">
+          <div class="product-info__size">
+            <p class="product-sizeClr">Size</p>
+            <div class="sizes">
+              <button class="size active">L</button>
+              <button class="size">XL</button>
+              <button class="size">XS</button>
+            </div>
+          </div>
+          <div class="product-info__color">
+            <p class="product-sizeClr">Color</p>
+            <div class="swatches">
+              <button class="product-info__swatch swatch-blue"></button>
+              <button class="product-info__swatch swatch-black"></button>
+              <button class="product-info__swatch swatch-beige"></button>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="product-info__qty">
+            <button type="button" id="dec">-</button>
+            <input type="text" id="qty" class="quantity"value="1" min="1">
+            <button type="button" id="inc">+</button>
+          </div>
+          
+          <button class="product-info__btn btn-primary">add to cart</button>
+          <button class="product-info__btn btn-secondary">+ Compare</button>
+        </div>
+
+      </aside>
+    </main>
+    <div class="product__horizontal-margin"></div>
+
+    <footer class="product__footer">
+      <p class="product__footer-text">
+        SKU <span class="product__footer-colon">&colon;</span><span class="product__footer-right">SS001</span>
+      </p>
+      <div class="product__footer-tCategory">
+        <p class="product__footer-text">
+          Category <span class="product__footer-colon">&colon;</span><span class="product__footer-right">Sofas</span>
+        </p>
+      </div>
+      <div class="product__footer-tTags">
+        <p class="product__footer-text">
+          Tags <span class="product__footer-colon">&colon;</span><span class="product__footer-right">Sofa, Chair, Home, Shop</span>
+        </p>
+      </div>
+      <div class="product__footer-tShare">
+        <p class="product__footer-text">
+          Share <span class="product__footer-colon">&colon;</span>
+          <span class="product__footer-right">
+            <img src="products/facebook-icon.png" class="product__footer-icon" alt="facebook">
+            <img src="products/linkedin-icon.png" class="product__footer-icon" alt="linkedIn">
+            <img src="products/twitter-icon.png" class="product__footer-icon" alt="twitter">
+          </span>
+        </p>
+      </div>
+    </footer>
+
   </div>
 </body>
 </html>
