@@ -13,6 +13,10 @@ body {
 i {
   color: #000;
 }
+.home-page{
+  display: flex;
+  flex-direction: column;
+}
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -37,27 +41,7 @@ i {
 .fa-solid, .fa-regular{
   padding-inline-end: 2.5em;
 }
-@media(max-width:800px){
-  .site-header{
-    flex-direction: column;
-  }
-  .site-header__branding{
-    margin:0;
-  }
-  .site-header__logo{
-    width: 50%;
-  }
-  .site-header__title{
-    margin-block-start: .15em;
-  }
-  .site-header__nav{
-    margin-block-start: .5em;
-  }
-  .site-header__nav-icons{
-    margin-block-start: 1em;
-    margin-inline-start: 1.5em;
-  }
-}
+
 .hero-section {
   position: relative;
   width: 100%;
@@ -146,12 +130,11 @@ i {
 }
 .products__items{
   display: grid;
-  grid-template-columns: repeat(4,15rem);
+  grid-template-columns: repeat(4,1fr);
   gap: 1.5rem;
   justify-content: center;
-   margin-block-start: 2em;
-  /* margin-inline-start: auto;
-  margin-inline-end: auto; */
+  width: min(90%, 1200px);
+  margin-inline: auto;
 }
  .products__card-image{
   display: block;
