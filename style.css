@@ -132,9 +132,13 @@ i {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 1.5rem;
-  justify-content: center;
   width: min(90%, 1200px);
   margin-inline: auto;
+}
+@media (max-width:1080px){
+  .products__items{
+    grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
+  }
 }
  .products__card-image{
   display: block;
@@ -221,7 +225,6 @@ padding-block-end: .4em;
   color: gray; 
   padding-block-start: 0.2rem;   
 }
-
 .products__button{
   border: 1px solid #b88e2f;
   color: #b88e2f;
@@ -233,6 +236,7 @@ padding-block-end: .4em;
   margin-inline-start  : 41rem;
   margin-block-end: 3em;
 }
+
 .horizontal-line{
   border-block-start: 1px solid #ccc;
   margin-block-start: 1em;
