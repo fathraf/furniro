@@ -840,22 +840,15 @@ padding-block-end: .4em;
   border-radius: 8px;
 }
 .product-info__qty button{
-  width: 40%;
-  height: 100%;
+  /* width: 40%; */
+  /* height: 100%; */
   background: transparent;
   border: none;
   font-size: 1.125rem;
   cursor: pointer;
   padding: 1em 1em;
 }
-.products__info__qty input{
-  /* width: 20%; */
-  /* height: 80%; */
-  text-align: center;
-  border: 0;
-  font-weight: 600;
-  outline: none;
-}
+
 #dec{
   border: none;
   background: none;
@@ -864,14 +857,14 @@ padding-block-end: .4em;
   border: none;
   background: none;
 }
-#qty{
+/* #qty{
   border: none;
   font-family: poppins,sans-serif;
   font-size: 1rem;
   font-weight: 500;
-}
+} */
 .quantity{
-  width: 20%;
+  /* width: 20%; */
   justify-content: center
 }
 .product-info__btn{
