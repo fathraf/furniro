@@ -338,7 +338,7 @@
 let quantity = 1;
 
 const quantityEl = document.querySelector('.quantity');
-const priceEl = document.querySelector('product-info__price');
+const priceEl = document.querySelector('.product-info__price');
 const increaseBtn = document.getElementById('inc');
 const decreaseBtn = document.getElementById('dec');
 
@@ -348,12 +348,13 @@ increaseBtn.addEventListener("click", function(){
 })
 decreaseBtn.addEventListener("click", function(){
   quantity--;
-  updateUI
+  updateUI()
 })
 
-function updateUI(){
+function updateUI() {
   quantityEl.textContent = quantity;
-  priceEl.textContent = unitPrice * quantity
+  priceEl.textContent = `Rs ${(unitPrice * quantity).toFixed(2)}`;
+  decreaseBtn.disabled = quantity === 1;
 }
     </script>
 </body>
