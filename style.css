@@ -1092,3 +1092,16 @@ padding-block-end: .4em;
   border: 1px solid black;
   padding: .5rem 1.5rem;
 }
+
+.cart-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  transition: .3s ease;
+  z-index: 999;
+}
+.cart-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
