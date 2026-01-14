@@ -162,6 +162,9 @@ i {
   padding: 1.3em 3.8em;
   margin-block-start: 2em;
 }
+.hero-section__btn:hover{
+  cursor: pointer;
+}
 @media(max-width:1024px){
   html{
     font-size: 15px;
@@ -1052,7 +1055,7 @@ padding-block-end: .4em;
   object-fit: contain;
   border-radius: 15px;
 }
-.item-details{
+.cart-item__info{
   display: flex;
   flex-direction: column;
   gap: .8rem;
@@ -1060,24 +1063,30 @@ padding-block-end: .4em;
 .item-meta{
   display: flex;
   align-items: center;
-  gap: .8rem;
+  gap: .5rem;
 }
 .item-price{
-  font-size: .5rem;
+  color: var(--txt-clr-box);
 }
 .remove-item{
-  background: none;
+  background: #ccc;
   border: none;
   font-size: 1rem;
   margin-left: auto;
   cursor: pointer;
+  border-radius: 20px;
+  padding: .1rem .5rem;
 }
 .cart-subtotal{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 12rem;
   margin-bottom: 1rem;
+}
+.subtotal-price{
+  color: var(--txt-clr-box);
+  font-weight: bold;
 }
 .cart-actions{
   margin-top: 2rem;
@@ -1097,6 +1106,7 @@ padding-block-end: .4em;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
   visibility: hidden;
   transition: .3s ease;
   z-index: 999;
